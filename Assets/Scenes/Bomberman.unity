@@ -668,12 +668,12 @@ GameObject:
   - component: {fileID: 669383417}
   - component: {fileID: 669383416}
   - component: {fileID: 669383415}
-  - component: {fileID: 669383414}
   - component: {fileID: 669383418}
+  - component: {fileID: 669383414}
   - component: {fileID: 669383420}
   - component: {fileID: 669383421}
   m_Layer: 7
-  m_Name: ' Player 1'
+  m_Name: Player 1
   m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -842,7 +842,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.31262755}
   serializedVersion: 2
-  m_Radius: 0.44647145
+  m_Radius: 0.45
 --- !u!1 &756117982
 GameObject:
   m_ObjectHideFlags: 0
@@ -5270,7 +5270,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.31262755}
   serializedVersion: 2
-  m_Radius: 0.44647145
+  m_Radius: 0.45
 --- !u!95 &2131769179
 Animator:
   serializedVersion: 5

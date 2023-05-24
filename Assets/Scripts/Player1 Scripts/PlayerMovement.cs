@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 1f;
+    public float moveSpeed = 5f;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -37,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void DeathSequence()
     {
+        animator.SetTrigger("Death");
         enabled = false;
         GetComponent<BombController>().enabled = false;
         moveSpeed = 0f;
